@@ -19,6 +19,7 @@ class _HomePageState extends State<HomePage> {
 
   double _pizzaScale = 1.0;
   Curve _pizzaCurve = Curves.easeIn;
+  bool _isLiked = false;
 
   static const double _largeFactor = 1.0;
   static const double _mediumFactor = 0.9;
@@ -80,7 +81,6 @@ class _HomePageState extends State<HomePage> {
 
   @override
   Widget build(BuildContext context) {
-    final screenHeight = MediaQuery.of(context).size.height;
 
     return Scaffold(
       appBar: AppBar(
@@ -90,10 +90,14 @@ class _HomePageState extends State<HomePage> {
         ),
         actions: [
           IconButton(
-            icon: const Icon(CupertinoIcons.heart),
+            icon:  Icon(_isLiked ? CupertinoIcons.heart_solid : CupertinoIcons.heart,color: primaryOrangeColor,),
             color: primaryOrangeColor,
             style: IconButton.styleFrom(backgroundColor: primaryDarkColor),
-            onPressed: () {},
+            onPressed: () {
+              setState(() {
+                _isLiked = !_isLiked; // Toggle the liked state
+              });
+            },
           ),
         ],
         title: const Text('Supreme Pizza'),

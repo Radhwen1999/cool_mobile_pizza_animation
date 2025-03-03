@@ -1,16 +1,60 @@
-# pizza_animation
+# 🍕 Pizza Animation - Flutter App
 
-A new Flutter project.
+## 📌 Overview
+Pizza Animation is a Flutter-based application demonstrating smooth animations for UI elements. The project serves as an example of well-structured animations in Flutter, utilizing `Explicit Animations`, and other animation techniques.
 
-## Getting Started
+## 🎯 Features
+- 🍕 Interactive pizza animations
+- 🌟 Smooth transitions and effects
+- 📱 Responsive UI for different screen sizes
+- 🔥 Uses best practices for Flutter animations
 
-This project is a starting point for a Flutter application.
+## 🚀 Getting Started
 
-A few resources to get you started if this is your first Flutter project:
+### Prerequisites
+Ensure you have the following installed:
+- [Flutter SDK](https://flutter.dev/docs/get-started/install)
+- Dart SDK (included with Flutter)
+- Android Studio or VS Code (with Flutter plugin)
+- A physical device or emulator
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+### Installation
+1. **Clone the repository**:
+   ```sh
+   git clone https://github.com/Radhwen1999/cool_mobile_pizza_animation.git
+   cd pizza_animation
+   ```
+2. **Install dependencies**:
+   ```sh
+   flutter pub get
+   ```
+3. **Run the app**:
+   ```sh
+   flutter run
+   ```
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 Project Structure
+```
+📦 pizza_animation
+├── lib
+│   ├── main.dart          # Entry point of the app
+│   ├── app_theme.dart     # Theme settings for the app
+│   ├── home_page.dart     # Main home screen
+│   ├── half_circle.dart   # Custom UI component
+├── assets
+│   ├── pizza.png         # Asset image for the animation
+├── android               # Android-specific configuration
+├── ios                   # iOS-specific configuration
+├── windows               # Windows build files
+├── pubspec.yaml          # Dependencies and project configuration
+├── README.md             # Project documentation
+```
+
+
+## 💡 Contribution
+Contributions are welcome! Feel free to fork the project and submit pull requests.
+
+---
+
+💻 Built with Flutter & ❤️ by [Radhwen Rmili]
+
