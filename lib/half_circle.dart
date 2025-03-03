@@ -8,10 +8,10 @@ class HalfCircle extends StatefulWidget {
   final Curve pizzaCurve;
 
   const HalfCircle({
-    Key? key,
+    super.key,
     required this.pizzaScale,
     required this.pizzaCurve,
-  }) : super(key: key);
+  });
 
   @override
   State<HalfCircle> createState() => _HalfCircleState();
@@ -54,6 +54,7 @@ class _HalfCircleState extends State<HalfCircle> with SingleTickerProviderStateM
   @override
   Widget build(BuildContext context) {
     final screenHeight = MediaQuery.of(context).size.height;
+    final screenWidth = MediaQuery.of(context).size.width;
     final diameter = screenHeight * 0.6;
 
     return Align(
@@ -74,7 +75,7 @@ class _HalfCircleState extends State<HalfCircle> with SingleTickerProviderStateM
             bottomLeft: Radius.circular(diameter),
           ),
           child: Transform.translate(
-            offset: const Offset(150, 0),
+            offset: Offset(screenWidth > 600 ? 200 : 150, 0,),
             child: OverflowBox(
               minWidth: 0,
               maxWidth: double.infinity,
