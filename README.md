@@ -4,7 +4,7 @@
 Pizza Animation is a Flutter-based application demonstrating smooth animations for UI elements. The project serves as an example of well-structured animations in Flutter, utilizing `Explicit Animations`, and other animation techniques.
 
 ## 🖼️ Screenshot
-<img src="assets/pizza.png" alt="Pizza Animation" width="640">
+<img src="assets/screen.png" alt="Pizza Animation" width="200">
 
 
 
